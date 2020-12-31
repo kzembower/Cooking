@@ -15,3 +15,6 @@ If you just want the finished documents, just download the PDF files. If you'd l
 
 3. Cooking weight-volume conversion chart for common foods
 * This is a cleaned version of the RCPS WEIGHT-VOLUME CONVERSION CHART FOR MANY FOODS data, in LiberOffice Writer format.
+
+4. Bean Cooking times
+* This is a one-page summary of the bean cooking times from _Cooking Under Pressure_, Lorna Sass, first edition, 2009, page 196. Significant contribution of the author of this document is the column “Fresh beans” time under pressure. This file is provided in both LibreOffice and PDF format.
