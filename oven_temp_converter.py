@@ -33,66 +33,79 @@ C_stop=290.0
  
 def celsius(fahrenheit):
     return (fahrenheit-32.0)/1.8
- 
+
 F_para={
-        'tag':'A',
-        'u_min':F_start,
-        'u_max':F_stop,
-        'function':lambda u:celsius(u),
-        'title':r'$^\circ$ F',
-        'tick_levels':4,
-        'tick_text_levels':3,
-        'align_func':celsius,
-        'title_x_shift':0.5,
+    'tag':'A',
+    'u_min':F_start,
+    'u_max':F_stop,
+    'function':lambda u:celsius(u),
+    'title':r'$^\circ$ F',
+    'tick_levels':4,
+    'tick_text_levels':3,
+    'align_func':celsius,
+    'title_x_shift':0.5,
     'extra_params':[{'scale_type':'manual arrow',
-                         'manual_axis_data':{255:r'very low',
-                                             305:r'low',
-                                             355:r'moderate',
-                                             405:r'hot',
-                                             455:r'very hot',
-                                             505:r'extremely hot',
-                                             545:r'broil',},
-                         'arrow_length':0.5,
-    }
-    ]
-        }
- 
-C_para={
-        'tag':'A',
-        'u_min':C_start,
-        'u_max':C_stop,
-        'function':lambda u:u,
-        'title':r'$^\circ$ C',
-        'tick_levels':2,
-        'tick_text_levels':1,
-        'scale_type':'linear',
-        'tick_side':'left',
-        'title_x_shift':-0.5,
-    'extra_params':[{'scale_type':'manual arrow',
-                     'manual_axis_data':{112:r'$1/4$',
-                                         125:r'$1/2$',
-                                         142:r'1',
-                                         152:r'2',
-                                         165:r'3',
-                                         182:r'4',
-                                         192:r'5',
-                                         202:r'6',
-                                         222:r'7',
-                                         232:r'8',
-                                         242:r'9',},
-                     'arrow_length':0.4,
+                     'manual_axis_data':{255:r'very low',
+                                         305:r'low',
+                                         355:r'moderate',
+                                         405:r'hot',
+                                         455:r'very hot',
+                                         505:r'extremely hot',
+                                         545:r'broil',},
+                     'arrow_length':0.5,
     }
     ]
 }
+ 
+C_para={
+    'tag':'A',
+    'u_min':C_start,
+    'u_max':C_stop,
+    'function':lambda u:u,
+    'title':r'$^\circ$ C',
+    'tick_levels':2,
+    'tick_text_levels':1,
+    'scale_type':'linear',
+    'tick_side':'left',
+    'title_x_shift':-0.5,
+    'extra_params':[
+        {'scale_type':'manual arrow',
+         'manual_axis_data':{90:r'Steak:extra-rare',
+                             122:r'Steak:R',
+                             133:r'Steak:MR',
+                             143:r'Steak:M',
+                             153:r'Steak:MW',
+                             160:r'Steak:W',
+                             165:r'Brisket; Ground Meat',
+                             180:r'Pot Roast',
+         },
+         'arrow_length':0.8,
+        },
+        {'scale_type':'manual arrow',
+         'manual_axis_data':{112:r'$1/4$',
+                             125:r'$1/2$',
+                             142:r'1',
+                             152:r'2',
+                             165:r'3',
+                             182:r'4',
+                             192:r'5',
+                             202:r'6',
+                             222:r'7',
+                             232:r'8',
+                             242:r'9',},
+         'arrow_length':0.4,
+        },
+    ],
+}
 
 C_block={
-         'block_type':'type_8',
-            'f_params':C_para
-         }
+    'block_type':'type_8',
+    'f_params':C_para
+}
 F_block={
-         'block_type':'type_8',
-            'f_params':F_para
-            }
+    'block_type':'type_8',
+    'f_params':F_para
+}
  
 main_params={
     'filename':'oven_temp_converter.pdf',
@@ -111,13 +124,13 @@ main_params={
          Celsius scale represent\par\
          British gas oven marks.',
          'width':7.0,
-         },
+        },
         {'x':-1.5,
          'y':-2.5,
          'text':r'Image available at:\par\
          https://github.com/kzembower/Cooking',
          'width':7.2,
-         },
-        ],
+        },
+    ],
 }
 Nomographer(main_params)
