@@ -7,7 +7,7 @@ If you just want the finished documents, just download the PDF files. If you'd l
 
 ## List of Documents:
 1. Cooking Weights Equivalents.pdf
-* This is a one-page chart showing the number of grams in various units (oz, tablespoons, teaspoons, each, etc) of various ingredients. Use it by locating the ingredient and the units in the first column, and following the row horizontally to the right to the column showing the number of the selected units. The number in that column is the number of grams of that number of units of that ingredient. For example, two tablespoons of coarse kosher salt is equivalent to 28.8 grams.
+* This is a two-page chart showing the number of grams in various units (oz, tablespoons, teaspoons, each, etc) of various ingredients. Use it by locating the ingredient and the units in the first column, and following the row horizontally to the right to the column showing the number of the selected units. The number in that column is the number of grams of that number of units of that ingredient. For example, two tablespoons of coarse kosher salt is equivalent to 28.8 grams.
 
 
 2. E-RCPS WEIGHT-VOLUME CONVERSION CHART FOR MANY FOODS
