@@ -1,11 +1,21 @@
-"""
-    oven_temp_converter.py
+"""oven_temp_converter.py
 
     Modified from ex_temp_converter.py by Leif Roschier. Creates
     nomograph that converts to/from celsius from/to Fahrenheit in the
     range needed for oven baking temperatures.
 
     Modified by Kevin Zembower, kevin@zembower.org
+
+    Version 0.2 created 19 Nov 2022
+
+    Changed name of output file to reflect side of scale for
+    Fahrenheit scale ("..._FR.pdf" is Fahrenheit on right side of
+    scale).
+
+    Commented out food names; not complete.
+
+
+    Version 0.1 created Jan 2021
 
     -----------------------------------------------------------------
     Celsius-Fahrenheit converter
@@ -24,6 +34,7 @@
  
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 """
 from pynomo.nomographer import *
 F_start=150.0
@@ -69,18 +80,18 @@ C_para={
     'tick_side':'left',
     'title_x_shift':-0.5,
     'extra_params':[
-        {'scale_type':'manual arrow',
-         'manual_axis_data':{90:r'Steak:extra-rare',
-                             122:r'Steak:R',
-                             133:r'Steak:MR',
-                             143:r'Steak:M',
-                             153:r'Steak:MW',
-                             160:r'Steak:W',
-                             165:r'Brisket; Ground Meat',
-                             180:r'Pot Roast',
-         },
-         'arrow_length':0.8,
-        },
+        # {'scale_type':'manual arrow',
+        #  'manual_axis_data':{90:r'Steak:extra-rare',
+        #                      122:r'Steak:R',
+        #                      133:r'Steak:MR',
+        #                      143:r'Steak:M',
+        #                      153:r'Steak:MW',
+        #                      160:r'Steak:W',
+        #                      165:r'Brisket; Ground Meat',
+        #                      180:r'Pot Roast',
+        #  },
+        #  'arrow_length':0.8,
+        # },
         {'scale_type':'manual arrow',
          'manual_axis_data':{112:r'$1/4$',
                              125:r'$1/2$',
@@ -108,7 +119,7 @@ F_block={
 }
  
 main_params={
-    'filename':'oven_temp_converter.pdf',
+    'filename':'oven_temp_converter_RF.pdf',
     'paper_height':20.0,
     'paper_width':2.0,
     'block_params':[C_block,F_block],
